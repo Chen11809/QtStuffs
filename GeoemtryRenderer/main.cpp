@@ -6,6 +6,8 @@
 
 int main(int argc, char* argv[])
 {
+    qputenv("QT3D_RENDERER", "opengl");
+
     QGuiApplication app(argc, argv);
     Qt3DExtras::Quick::Qt3DQuickWindow view;
 

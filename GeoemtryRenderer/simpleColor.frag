@@ -1,11 +1,20 @@
-#version 450
+#version 430
 
-layout(location = 2) in vec4 color;
+in vec3 color;
 
-layout(location = 0) out vec4 fragColor;
+out vec4 fragColor;
+
+layout(std430, binding = 4) coherent buffer OverlapSSBO {
+    int overlapInfo[];
+} overlapSSBO;
+
+uniform vec2 winSize;
 
 void main()
 {
-    fragColor = color;
+    int idx = int(ceil(gl_FragCoord.y)) * int(winSize.x) + int(ceil(gl_FragCoord.x));
+    atomicAdd(overlapSSBO.overlapInfo[idx], 1);
+
+    fragColor = vec4(color, 0.5);
 }
 
