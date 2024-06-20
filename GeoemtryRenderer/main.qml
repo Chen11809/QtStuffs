@@ -126,7 +126,7 @@ Entity {
                     v0, n0, red,
                     v1, n1, red,
                     v2, n2, red,
-                    v3, n3, white
+                    v3, n3, red
                 ]
 
         var vertexArray = new Float32Array(4 * (3 + 3 + 4));
