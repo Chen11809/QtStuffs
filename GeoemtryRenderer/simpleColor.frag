@@ -12,7 +12,7 @@ uniform vec2 winSize;
 
 void main()
 {
-    int idx = int(ceil(gl_FragCoord.y)) * int(winSize.x) + int(ceil(gl_FragCoord.x));
+    int idx = int(floor(gl_FragCoord.y)) * int(winSize.x) + int(floor(gl_FragCoord.x));
     atomicAdd(overlapSSBO.overlapInfo[idx], 1);
 
     fragColor = vec4(color, 0.5);

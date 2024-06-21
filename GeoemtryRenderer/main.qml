@@ -24,7 +24,7 @@ Entity {
 
     OrbitCameraController { camera: camera }
 
-    readonly property Layer offscreenLayer: Layer{}
+    readonly property Layer fillPassLayer: Layer{}
     readonly property Layer compositingLayer: Layer{}
     readonly property vector2d winSize: surfaceSelector.surface ? Qt.vector2d(surfaceSelector.surface.width, surfaceSelector.surface.height) : Qt.vector2d(1, 1)
 
@@ -56,27 +56,21 @@ Entity {
                 ClearBuffers {
                     clearColor: Qt.rgba(0.5, 0.5, 1, 1)
                     buffers: ClearBuffers.ColorDepthBuffer
+                    NoDraw{}
+                }
 
-                    // Offscreen Pass
-                    LayerFilter {
-                        layers: offscreenLayer
-                        CameraSelector {
-                            camera: camera
-                            RenderTargetSelector {
-                                target: OffscreenRenderTarget {
-                                    id: offscreenRenderTarget
-                                    width: winSize.x
-                                    height: winSize.y
-                                }
-                            }
-                        }
+                // First Pass
+                LayerFilter {
+                    layers: fillPassLayer
+                    CameraSelector {
+                        camera: camera
                     }
+                }
 
-                    // Compositing Pass
-                    LayerFilter {
-                        MemoryBarrier{ waitFor: MemoryBarrier.ShaderStorage}
-                        layers: compositingLayer
-                    }
+                // Overlapping Fragment Pass
+                LayerFilter {
+                    MemoryBarrier{ waitFor: MemoryBarrier.ShaderStorage}
+                    layers: compositingLayer
                 }
             }
         },
@@ -85,14 +79,13 @@ Entity {
     ]
 
     OverlappingTriangles {
-        layer: offscreenLayer
+        layer: fillPassLayer
         overlapSSBO: fragmentOverlapSSBO
         winSize: sceneRoot.winSize
     }
 
     Compositor {
         layer: compositingLayer
-        colorTexture: offscreenRenderTarget.color
         overlapSSBO: fragmentOverlapSSBO
         winSize: sceneRoot.winSize
     }
