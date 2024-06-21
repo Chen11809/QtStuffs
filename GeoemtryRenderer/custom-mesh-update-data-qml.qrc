@@ -3,5 +3,10 @@
         <file>main.qml</file>
         <file>simpleColor.frag</file>
         <file>simpleColor.vert</file>
+        <file>OverlappingTriangles.qml</file>
+        <file>OffscreenRenderTarget.qml</file>
+        <file>Compositor.qml</file>
+        <file>compositor.vert</file>
+        <file>compositor.frag</file>
     </qresource>
 </RCC>
