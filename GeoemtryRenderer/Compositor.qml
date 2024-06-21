@@ -5,7 +5,6 @@ import Qt3D.Extras 2.0
 Entity {
     id: root
     property Layer layer
-    property Texture2D colorTexture
     property Buffer overlapSSBO
     property vector2d winSize
 
@@ -21,7 +20,6 @@ Entity {
 
     readonly property Material material: Material {
         parameters: [
-            Parameter { name: "colorTexture"; value: root.colorTexture },
             Parameter { name: "OverlapSSBO"; value: root.overlapSSBO },
             Parameter { name: "winSize"; value: root.winSize }
         ]
