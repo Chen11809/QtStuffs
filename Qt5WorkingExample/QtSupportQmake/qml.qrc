@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>RenderEntity.qml</file>
+        <file>RenderScene.qml</file>
+        <file>RenderViewer.qml</file>
+        <file>RoughnessMapMaterial.qml</file>
+        <file>Images/textureWithHeatmapImage.png</file>
+        <file>Shaders/gl3/roughnessMap.frag</file>
+        <file>Shaders/gl3/roughnessMap.vert</file>
+        <file>Shaders/gl45/roughnessMap.frag</file>
+        <file>Shaders/gl45/roughnessMap.vert</file>
+        <file>points.txt</file>
+    </qresource>
+</RCC>
