@@ -1,0 +1,72 @@
+Discovering servers on  "opc.tcp://10.9.98.168:48010"
+qt.opcua.plugins.open62541.sdk.eventloop: Starting the EventLoop
+qt.opcua.plugins.open62541.sdk.client: skip verifying ApplicationURI for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None
+qt.opcua.plugins.open62541.sdk.network: TCP 1776	| Opening a connection to "10.9.98.168" on port 48010
+qt.opcua.plugins.open62541.sdk.securechannel: TCP 1776	| SC 4073159550	| SecureChannel opened with SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None and a revised lifetime of 600.00s
+qt.opcua.plugins.open62541.sdk.client: Client Status: ChannelState: Open, SessionState: Closed, ConnectStatus: Good
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 0: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 1: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 2: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 3: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 4: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 5: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Selected endpoint with EndpointUrl opc.tcp://10.9.98.168:48010, SecurityMode None and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None
+qt.opcua.plugins.open62541.sdk.securechannel: TCP 1776	| SC 4073159550	| SecureChannel closed
+qt.opcua.plugins.open62541.sdk.client: Client Status: ChannelState: Fresh, SessionState: Closed, ConnectStatus: BadConnectionClosed
+qt.opcua.plugins.open62541.sdk.network: TCP 1776	| Socket closed
+qt.opcua.plugins.open62541.sdk.eventloop: Stopping the EventLoop
+qt.opcua.plugins.open62541.sdk.network: UDP	| Shutting down the ConnectionManager
+qt.opcua.plugins.open62541.sdk.network: TCP	| Shutting down the ConnectionManager
+qt.opcua.plugins.open62541.sdk.eventloop: The EventLoop has stopped
+qt.opcua.plugins.open62541.sdk.eventloop: Starting the EventLoop
+qt.opcua.plugins.open62541.sdk.client: skip verifying ApplicationURI for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None
+qt.opcua.plugins.open62541.sdk.network: TCP 1776	| Opening a connection to "10.9.98.168" on port 48010
+qt.opcua.plugins.open62541.sdk.securechannel: TCP 1776	| SC 4073159551	| SecureChannel opened with SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None and a revised lifetime of 600.00s
+qt.opcua.plugins.open62541.sdk.client: Client Status: ChannelState: Open, SessionState: Closed, ConnectStatus: Good
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 0: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 1: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 2: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 3: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 4: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 5: security policy not available
+qt.opcua.plugins.open62541.sdk.client: Selected endpoint with EndpointUrl opc.tcp://10.9.98.168:48010, SecurityMode None and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None
+qt.opcua.plugins.open62541.sdk.securechannel: TCP 1776	| SC 4073159551	| SecureChannel closed
+qt.opcua.plugins.open62541.sdk.client: Client Status: ChannelState: Fresh, SessionState: Closed, ConnectStatus: BadConnectionClosed
+qt.opcua.plugins.open62541.sdk.network: TCP 1776	| Socket closed
+qt.opcua.plugins.open62541.sdk.eventloop: Stopping the EventLoop
+qt.opcua.plugins.open62541.sdk.network: UDP	| Shutting down the ConnectionManager
+qt.opcua.plugins.open62541.sdk.network: TCP	| Shutting down the ConnectionManager
+qt.opcua.plugins.open62541.sdk.eventloop: The EventLoop has stopped
+Client state changed QOpcUaClient::Connecting
+qt.opcua.plugins.open62541.sdk.securitypolicy: The Aes128Sha256RsaOaep security policy with openssl is added.
+qt.opcua.plugins.open62541.sdk.eventloop: Starting the EventLoop
+qt.opcua.plugins.open62541.sdk.client: skip verifying ApplicationURI for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None
+qt.opcua.plugins.open62541.sdk.network: TCP 1840	| Opening a connection to "10.9.98.168" on port 48010
+qt.opcua.plugins.open62541.sdk.securechannel: TCP 1840	| SC 4073159552	| SecureChannel opened with SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None and a revised lifetime of 600.00s
+qt.opcua.plugins.open62541.sdk.client: Client Status: ChannelState: Open, SessionState: Closed, ConnectStatus: Good
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 0: security mode does not match
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 1: security policy does not match the configuration
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 2: security mode does not match
+qt.opcua.plugins.open62541.sdk.client: Rejecting endpoint 5: security policy does not match the configuration
+qt.opcua.plugins.open62541.sdk.client: Selected endpoint with EndpointUrl opc.tcp://10.9.98.168:48010, SecurityMode SignAndEncrypt and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Aes128_Sha256_RsaOaep
+qt.opcua.plugins.open62541.sdk.securechannel: TCP 1840	| SC 4073159552	| SecureChannel closed
+qt.opcua.plugins.open62541.sdk.client: skip verifying ApplicationURI for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None
+qt.opcua.plugins.open62541.sdk.securitypolicy: The Aes128Sha256RsaOaep security policy channel with openssl is created.
+qt.opcua.plugins.open62541.sdk.network: TCP 1872	| Opening a connection to "10.9.98.168" on port 48010
+qt.opcua.plugins.open62541.sdk.network: TCP 1840	| Socket closed
+qt.opcua.plugins.open62541.sdk.securechannel: TCP 1872	| SC 4073159553	| SecureChannel opened with SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Aes128_Sha256_RsaOaep and a revised lifetime of 600.00s
+qt.opcua.plugins.open62541.sdk.client: Client Status: ChannelState: Open, SessionState: Closed, ConnectStatus: Good
+qt.opcua.plugins.open62541.sdk.client: UserTokenPolicy http://opcfoundation.org/UA/SecurityPolicy#Aes128_Sha256_RsaOaep not available for authentication
+qt.opcua.plugins.open62541.sdk.client: ActivateSession failed when sending the request with error code BadSecurityPolicyRejected
+qt.opcua.plugins.open62541.sdk.client: Client Status: ChannelState: Open, SessionState: Created, ConnectStatus: BadSecurityPolicyRejected
+qt.opcua.plugins.open62541.sdk.securechannel: TCP 1872	| SC 4073159553	| SecureChannel closed
+qt.opcua.plugins.open62541.sdk.securitypolicy: The Aes128Sha256RsaOaep security policy channel with openssl is deleted.
+qt.opcua.plugins.open62541.sdk.client: Client Status: ChannelState: Fresh, SessionState: Closed, ConnectStatus: BadSecurityPolicyRejected
+qt.opcua.plugins.open62541.sdk.network: TCP 1872	| Socket closed
+qt.opcua.plugins.open62541.sdk.eventloop: Stopping the EventLoop
+qt.opcua.plugins.open62541.sdk.network: UDP	| Shutting down the ConnectionManager
+qt.opcua.plugins.open62541.sdk.network: TCP	| Shutting down the ConnectionManager
+qt.opcua.plugins.open62541.sdk.eventloop: The EventLoop has stopped
+qt.opcua.plugins.open62541: Open62541: Failed to connect
+Client error changed QOpcUaClient::UnknownError
+Client state changed QOpcUaClient::Disconnected
